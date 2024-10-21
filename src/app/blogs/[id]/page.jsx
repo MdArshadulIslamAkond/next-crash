@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 
 const Blog = ({params}) => {
  const {id} = params;
- if(id === '3'){
+ if(parseInt(id) >= 3){
   notFound();
  }
   return (

@@ -1,5 +1,5 @@
 import Button from "@/app/component/Button";
-import thumb from "@/public/images/images.jpg";
+import thumb from "@/assets/images/images.jpg";
 import Image from "next/image";
 const mission = () => {
   // throw new Error('Invalid')
@@ -12,8 +12,8 @@ const mission = () => {
         cupidatat est velit dolore fugiat. Commodo voluptate cupidatat ea mollit
         do sit consectetur labore est aliquip laboris exercitation.
       </p>
-      <div className="">
-      <Image src={thumb} alt="thumb image" placeholder="blur" quality={100} style={{objectFit:"cover"}} className="my-6"/>
+      <div className="relative w-[600px] h-[450px]">
+      <Image src={thumb} fill alt="thumb image" placeholder="blur" quality={100} style={{objectFit:"cover"}} className="my-6"/>
       </div>
       <Button />
     </main>
